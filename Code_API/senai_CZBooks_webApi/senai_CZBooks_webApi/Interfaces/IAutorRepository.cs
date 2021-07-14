@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Interfaces
 {
-    interface IAutor
+    interface IAutorRepository
     {
         /// <summary>
         /// Faz a listagem de todos os autores

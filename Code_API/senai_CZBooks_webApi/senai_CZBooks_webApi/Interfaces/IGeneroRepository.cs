@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Interfaces
 {
-    interface IGenero
+    interface IGeneroRepository
     {
 
         /// <summary>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace senai_CZBooks_webApi.Interfaces
 {
     //Inicia os métodos da interface Livro
-    interface ILivro
+    interface ILivroRepository
     {
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace senai_CZBooks_webApi.Interfaces
         /// Faz a busca de todos os livros por id
         /// </summary>
         /// <returns>O indice procurado</returns>
-        Livro BuscarPorId();
+        Livro BuscarPorId(int id);
 
         /// <summary>
         /// Faz o cadastro de um novo livro

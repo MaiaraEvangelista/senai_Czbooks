@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Interfaces
 {
-    interface IInstituicao
+    interface IInstituicaoRepository
     {
 
         /// <summary>

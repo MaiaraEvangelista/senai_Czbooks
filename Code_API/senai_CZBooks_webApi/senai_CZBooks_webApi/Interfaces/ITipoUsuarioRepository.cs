@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Interfaces
 {
-    interface ITipoUsuario
+    interface ITipoUsuarioRepository
     {
         /// <summary>
         /// Faz a listagem de todos os tipos de usuários
@@ -19,7 +19,7 @@ namespace senai_CZBooks_webApi.Interfaces
         /// Faz a busca de um tipo de usuário pelo id
         /// </summary>
         /// <returns></returns>
-        TiposUsuario BuscarPorId();
+        TiposUsuario BuscarPorId(int id);
 
 
         /// <summary>
