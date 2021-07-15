@@ -39,7 +39,7 @@ namespace senai_CZBooks_webApi.Repositories
         /// </summary>
         /// <param name="id">identificador</param>
         /// <param name="novaInstituicao">nomenclatura para o cadastro</param>
-        public void Cadastrar(int id, Instituicao novaInstituicao)
+        public void Cadastrar( Instituicao novaInstituicao)
         {
             throw new NotImplementedException();
         }

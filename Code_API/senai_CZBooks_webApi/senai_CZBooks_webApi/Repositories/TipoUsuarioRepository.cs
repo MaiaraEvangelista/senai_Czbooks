@@ -13,11 +13,15 @@ namespace senai_CZBooks_webApi.Repositories
     /// </summary>
     public class TipoUsuarioRepository : ITipoUsuarioRepository
     {
-     /// <summary>
-     /// Faz a busca pelo id
-     /// </summary>
-     /// <param name="id">identificador</param>
-     /// <returns>retorna o tipo de usuário</returns>
+        public void Atualizar(int id, TiposUsuario tipoUsuarioAtualizado) {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Faz a busca pelo id
+        /// </summary>
+        /// <param name="id">identificador</param>
+        /// <returns>retorna o tipo de usuário</returns>
         public TiposUsuario BuscarPorId(int id)
         {
             throw new NotImplementedException();
@@ -28,7 +32,7 @@ namespace senai_CZBooks_webApi.Repositories
         /// </summary>
         /// <param name="id">identificador</param>
         /// <param name="tipoUsuarioCadastrado">nomenclatura para o usuário cadasrtrado</param>
-        public void Cadastrar(int id, TiposUsuario tipoUsuarioCadastrado)
+        public void Cadastrar(TiposUsuario tipoUsuarioCadastrado)
         {
             throw new NotImplementedException();
         }

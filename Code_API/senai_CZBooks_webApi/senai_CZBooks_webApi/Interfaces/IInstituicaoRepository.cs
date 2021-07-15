@@ -28,7 +28,7 @@ namespace senai_CZBooks_webApi.Interfaces
         /// </summary>
         /// <param name="id">Identificador</param>
         /// <param name="novaInstituicao">Nova instituição cadastrada</param>
-        void Cadastrar(int id, Instituicao novaInstituicao);
+        void Cadastrar( Instituicao novaInstituicao);
 
 
         /// <summary>

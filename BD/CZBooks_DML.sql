@@ -22,13 +22,6 @@ VALUES			   (2, 'Mario Fernandes')
 				  ,(2, 'Sergio Braga')
 GO
 
-INSERT INTO genero(idLivro, tipo)
-VALUES			    (4, 'Terror')
-				   ,(1, 'Romance')
-				   ,(2, 'Ficção Científica')
-				   ,(3, 'Drama')
-GO
-
 INSERT INTO instituicao(nomeFantasia, CNPJ, endereco, horarioAbertura, horarioFechamento)
 VALUES					 ('DreamBooks', '20.956.021/9457-00', 'R.Colina, 235, Crapicuíba -SP', '08:00', '19:00'  )
 				        ,('Viagem em Palavras', '14.215.975/2150-77', 'Av.Inocêncio Seráfico,1630, Carapicuíba - SP', '07:00', '18:40')
@@ -42,4 +35,14 @@ VALUES           (2, 3, 'Tudo aquilo que eu não disse', 'Andressa Matias', 'Roma
 				,(1, 1, 'Visão do  Paraíso', 'Mario Fernandes', 'Drama', '10/04/2020', 'Após perder a vida olhar sua família através de um mundo onde não se é vista, lhe dói mais seu coração...')
 				,(3, 4, 'Noite Sombria', 'Flora Magalhães', 'Terror', '27/01/2021', 'Enquanto a noite cai, um calafrio sobe pela espinha de Emily, a que a faz pensar no que pode estar havendo de errado, já que nada está como a minutos atrás.')
 GO
+
+INSERT INTO genero(idLivro, tipo)
+VALUES			    (4, 'Terror')
+				   ,(1, 'Romance')
+				   ,(2, 'Ficção Científica')
+				   ,(3, 'Drama')
+GO
+
+DROP TABLE genero;
+DROP DATABASE CZBooks;
 				

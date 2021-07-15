@@ -34,9 +34,8 @@ namespace senai_CZBooks_webApi.Interfaces
         /// <summary>
         /// Faz a atualização do autor
         /// </summary>
-        /// <param name="id">identificador</param>
         /// <param name="autorAtualizado">Autor que será atualizado</param>
-        void Atualizar(int id, Autor autorAtualizado);
+        void Atualizar( Autor autorAtualizado);
 
 
         /// <summary>

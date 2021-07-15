@@ -37,9 +37,8 @@ namespace senai_CZBooks_webApi.Repositories
         /// <summary>
         /// Faz o cadastro de um gênero 
         /// </summary>
-        /// <param name="id">identificador</param>
         /// <param name="novoGenero">nomenclatura do cadastro </param>
-        public void Cadastar(int id, Genero novoGenero)
+        public void Cadastar( Genero novoGenero)
         {
             throw new NotImplementedException();
         }

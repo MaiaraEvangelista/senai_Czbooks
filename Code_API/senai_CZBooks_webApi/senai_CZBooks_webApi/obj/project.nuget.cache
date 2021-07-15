@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nXb3UBG8Z7Yc2mlh/ZOUuQjnrjVlUdPIA+QSmx2LInWVkGVnNPBRkZxAydAcLYEhxdmWl3nBL5oo0rCQ4wxlDQ==",
+  "dgSpecHash": "YpBcJiMkvQjzGQp+yy9MbaL7WAntpi9YTiEKyOKO8wtKkIIyLcJIIgg6jAsO7LZ7pGv6zDLR11GCWdLn+TQsBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FIC\\Desktop\\Czbooks_Maiara\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
+  "projectFilePath": "C:\\Users\\FIC\\Desktop\\CZBooks_Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FIC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FIC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

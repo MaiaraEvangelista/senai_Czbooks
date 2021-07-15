@@ -11,14 +11,14 @@ namespace senai_CZBooks_webApi.Repositories
     /// Instância a classe autor repository
     /// herda a interface
     /// </summary>
-    public class AutorRepositpory : IAutorRepository
+    public class AutorRepository : IAutorRepository
     {
         /// <summary>
         /// Faz a atualização do autor
         /// </summary>
         /// <param name="id">identificador</param>
         /// <param name="autorAtualizado">nomenclatura para atualização</param>
-        public void Atualizar(int id, Autor autorAtualizado)
+        public void Atualizar(Autor autorAtualizado)
         {
             throw new NotImplementedException();
         }

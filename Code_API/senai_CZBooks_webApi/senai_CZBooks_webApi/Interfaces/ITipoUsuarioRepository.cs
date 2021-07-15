@@ -27,7 +27,7 @@ namespace senai_CZBooks_webApi.Interfaces
         /// </summary>
         /// <param name="id">Identificador do tipo de usuário</param>
         /// <param name="tipoUsuarioCadastrado">Nomenclatura para o cadastro</param>
-        void Cadastrar(int id, TiposUsuario tipoUsuarioCadastrado);
+        void Cadastrar( TiposUsuario tipoUsuarioCadastrado);
 
 
         /// <summary>
@@ -35,5 +35,13 @@ namespace senai_CZBooks_webApi.Interfaces
         /// </summary>
         /// <param name="id">Identificador</param>
         void Deletar(int id);
+
+
+        /// <summary>
+        /// Faz a atualização 
+        /// </summary>
+        /// <param name="id">identificador </param>
+        /// <param name="tipoUsuarioAtualizado">O tipo usuário que foi atualizado</param>
+        void Atualizar(int id, TiposUsuario tipoUsuarioAtualizado);
     }
 }
