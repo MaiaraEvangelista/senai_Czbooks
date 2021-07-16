@@ -56,3 +56,12 @@ C:\Users\FIC\Desktop\Czbooks_Maiara\Code_API\senai_CZBooks_webApi\senai_CZBooks_
 C:\Users\FIC\Desktop\Czbooks_Maiara\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\ref\senai_CZBooks_webApi.dll
 C:\Users\FIC\Desktop\Czbooks_Maiara\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.pdb
 C:\Users\FIC\Desktop\Czbooks_Maiara\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.genruntimeconfig.cache
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.csproj.AssemblyReference.cache
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.AssemblyInfoInputs.cache
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.AssemblyInfo.cs
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.csproj.CoreCompileInputs.cache
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.dll
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\ref\senai_CZBooks_webApi.dll
+C:\Users\FIC\Desktop\CZBooks_Maiara\senai_Czbooks\Code_API\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.pdb

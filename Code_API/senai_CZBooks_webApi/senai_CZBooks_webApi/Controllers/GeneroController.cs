@@ -9,6 +9,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Controllers {
+    //Define que a resposta vai ser em json
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class GeneroController : ControllerBase 
@@ -53,7 +55,7 @@ namespace senai_CZBooks_webApi.Controllers {
         public IActionResult Cadastrar(Genero novoGenero) 
         {
             //Faz a chamada para o método de cadastro
-            _generoRepository.Cadastar(novoGenero);
+            _generoRepository.Cadastrar(novoGenero);
             //Faz o retoro de um status code
             return StatusCode(201);
         }

@@ -1,4 +1,5 @@
-﻿using senai_CZBooks_webApi.Domains;
+﻿using senai_CZBooks_webApi.Contexts;
+using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -7,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Repositories
 {
+
     public class UsuarioRepository : IUsuarioRepository
     {
+        //Faz a instância do context que possui conexão com o banco de dados
+        CZBooksContext ctx = new CZBooksContext();
+
         /// <summary>
         /// Faz a atualização do email
         /// </summary>
@@ -16,7 +21,20 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="usuarioAtualizado">nomenclatura de atualização</param>
         public void AtualizarEmail(string email, Usuario usuarioAtualizado)
         {
-            throw new NotImplementedException();
+            //Faz a busca pelo identificador do usuário
+            Usuario usuarioBuscado = ctx.Usuarios.Find(email);
+
+            //Faz a verificação para ver se é diferente de nulo
+            if(usuarioAtualizado.Email != null) 
+            {
+                //Atribui os valores procurado, e indica onde será armazenado
+                usuarioBuscado.Email = usuarioAtualizado.Email;
+            }
+
+            //Faz a atualização do que foi buscado
+            ctx.Usuarios.Update(usuarioBuscado);
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
         /// <summary>
@@ -26,17 +44,34 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="usuarioAtualizado">nomenclatura para a atualização</param>
         public void AtualizarSenha(string senha, Usuario usuarioAtualizado)
         {
-            throw new NotImplementedException();
+            //Faz a busca pelo identificador do usuário
+            Usuario usuarioBuscado = ctx.Usuarios.Find(senha);
+
+            //Faz a verificaçaõ para ver s eé diferente de nulo
+            if(usuarioAtualizado.Senha != null) 
+            {
+                //Atribui os valores, e indica onde será armazenado
+                usuarioBuscado.Senha = usuarioAtualizado.Senha;
+            }
+            //Faz a atualização 
+            ctx.Usuarios.Update(usuarioBuscado);
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
+
 
         /// <summary>
         /// Faz um cadastro de usuário
         /// </summary>
-        /// <param name="id">identificador</param>
         /// <param name="novoUsuario">nomenclatura para atualização</param>
-        public void Cadastrar(int id, Usuario novoUsuario)
+        public void Cadastrar( Usuario novoUsuario)
         {
-            throw new NotImplementedException();
+            //Executa o método de cadastro
+            ctx.Usuarios.Add(novoUsuario);
+
+            //Salva as alterações feitas
+            ctx.SaveChanges();
         }
 
         /// <summary>
@@ -45,7 +80,11 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="id">identificador</param>
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            //Faz a execução do método
+            ctx.Usuarios.Remove(BuscarPorId(id));
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
         /// <summary>
@@ -56,7 +95,17 @@ namespace senai_CZBooks_webApi.Repositories
         /// <returns>o usuário logado</returns>
         public Usuario Login(string email, string senha)
         {
-            throw new NotImplementedException();
+            return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+        }
+
+        /// <summary>
+        /// Faz a busca pelo identficador
+        /// </summary>
+        /// <param name="id">identificador</param>
+        public Usuario BuscarPorId(int id) 
+        {
+            //Faz a busca pelo identificador
+            return ctx.Usuarios.FirstOrDefault(u => u.IdUsuario == id);
         }
     }
 }

@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 namespace senai_CZBooks_webApi.Controllers {
     [Route("api/[controller]")]
     [ApiController]
+    //Define que a resposta vai ser em json
+    [Produces("application/json")]
+
     public class UsuarioController : ControllerBase 
     {
         //Instância a interface para receber os métodos
@@ -26,12 +29,12 @@ namespace senai_CZBooks_webApi.Controllers {
         /// </summary>
         /// <param name="id">Identificador</param>
         /// <param name="novoUsuario">nomenclatura de cadastro</param>
-        /// <returns>Um objetop cadastrado</returns>
+        /// <returns>Um objeto cadastrado</returns>
         [HttpPost]
-        public IActionResult Cadastrar(int id, Usuario novoUsuario) 
+        public IActionResult Cadastrar( Usuario novoUsuario) 
         {
             //Faz a chamada para o método
-            _usuarioRepository.Cadastrar(id, novoUsuario);
+            _usuarioRepository.Cadastrar( novoUsuario);
             //retorna um status code
             return StatusCode(201);
         }
@@ -78,6 +81,16 @@ namespace senai_CZBooks_webApi.Controllers {
             _usuarioRepository.Deletar(id);
             //retorna um status code
             return StatusCode(204);
+        }
+
+        /// <summary>
+        /// Faz a busca pelo identificador
+        /// </summary>
+        /// <param name="id">Identificador</param>
+        /// <returns>A busca pelo identificador</returns>
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id) {
+            return Ok(_usuarioRepository.BuscarPorId(id));
         }
     }
 }

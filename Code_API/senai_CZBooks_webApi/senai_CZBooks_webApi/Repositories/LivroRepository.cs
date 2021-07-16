@@ -1,4 +1,5 @@
-﻿using senai_CZBooks_webApi.Domains;
+﻿using senai_CZBooks_webApi.Contexts;
+using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,11 @@ namespace senai_CZBooks_webApi.Repositories
     /// </summary>
     public class LivroRepository : ILivroRepository
     {
+
+        //Faz instância da context para ter conexão com o Banco de dados
+        CZBooksContext ctx = new CZBooksContext();
+
+
         /// <summary>
         /// Faz a atualização de um livro
         /// </summary>
@@ -20,7 +26,33 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="livroAtualizado">nomenclatura para a atualização</param>
         public void Atualizar(int id, Livro livroAtualizado)
         {
-            throw new NotImplementedException();
+            //Instância o livro buscado e procura pelo id
+            Livro livroBuscado = ctx.Livros.Find(id);
+
+            if(livroAtualizado.Autor != null) 
+            {
+                livroBuscado.Autor = livroAtualizado.Autor;
+            }
+
+            if(livroAtualizado.Categoria != null) 
+            {
+                livroBuscado.Categoria = livroAtualizado.Categoria;
+            }
+
+            if(livroAtualizado.DataPublicacao != null) 
+            {
+                livroBuscado.DataPublicacao = livroAtualizado.DataPublicacao;
+            }
+
+            if(livroAtualizado.Titulo != null) 
+            {
+                livroBuscado.Titulo = livroAtualizado.Titulo;
+            }
+
+            if(livroAtualizado.Sinopse != null) 
+            {
+                livroBuscado.Sinopse = livroAtualizado.Sinopse;
+            }
         }
 
         /// <summary>
@@ -30,7 +62,8 @@ namespace senai_CZBooks_webApi.Repositories
         /// <returns>O livro encontrado através do id</returns>
         public Livro BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            //Faz a busca pelo id e devolve a resposta
+            return ctx.Livros.FirstOrDefault(l => l.IdLivro == id);    
         }
 
         /// <summary>
@@ -39,7 +72,11 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="novoLivro">nomenclatura do cadastro</param>
         public void Cadastrar(Livro novoLivro)
         {
-            throw new NotImplementedException();
+            //Faz o cadastro de um novo livro
+            ctx.Livros.Add(novoLivro);
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
         /// <summary>
@@ -48,7 +85,11 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="id">identificador</param>
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            //Faz a execução do método de exclusão
+            ctx.Livros.Remove(BuscarPorId(id));
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
         /// <summary>
@@ -57,7 +98,8 @@ namespace senai_CZBooks_webApi.Repositories
         /// <returns>Uma lista com as informações do livro</returns>
         public List<Livro> ListarTodos()
         {
-            throw new NotImplementedException();
+            //Faz o retorno da lista
+            return ctx.Livros.ToList();
         }
     }
 }

@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 namespace senai_CZBooks_webApi.Controllers {
     [Route("api/[controller]")]
     [ApiController]
+    //Define que a resposta vai ser em json
+    [Produces("application/json")]
+
     public class tipoUsuarioController : ControllerBase 
     {
         //Instância a interface para receber os métodos

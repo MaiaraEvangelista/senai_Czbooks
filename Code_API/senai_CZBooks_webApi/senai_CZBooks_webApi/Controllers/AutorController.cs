@@ -9,7 +9,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Controllers {
+    //Define que a resposta vai ser em json
+    [Produces("application/json")]
+    //passa a rota
     [Route("api/[controller]")]
+    //define que é um controlador
     [ApiController]
     public class AutorController : ControllerBase 
     {

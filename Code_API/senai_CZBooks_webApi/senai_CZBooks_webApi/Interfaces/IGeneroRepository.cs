@@ -28,7 +28,7 @@ namespace senai_CZBooks_webApi.Interfaces
         /// Faz o cadastro de gêneros
         /// </summary>
         /// <param name="novoGenero">O gênero cadastrado</param>
-        void Cadastar( Genero novoGenero);
+        void Cadastrar( Genero novoGenero);
 
 
         /// <summary>

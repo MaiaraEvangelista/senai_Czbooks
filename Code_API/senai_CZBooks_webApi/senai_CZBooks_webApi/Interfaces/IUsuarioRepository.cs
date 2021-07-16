@@ -11,9 +11,8 @@ namespace senai_CZBooks_webApi.Interfaces
         /// <summary>
         /// Faz o cadastro de um novo usuário
         /// </summary>
-        /// <param name="id">Identificador</param>
         /// <param name="novoUsuario">Usuário cadastrado</param>
-        void Cadastrar(int id, Usuario novoUsuario);
+        void Cadastrar( Usuario novoUsuario);
 
 
         /// <summary>
@@ -43,5 +42,11 @@ namespace senai_CZBooks_webApi.Interfaces
         /// <param name="senha">parâmetro para conexão com a conta</param>
         /// <returns>Usuário logado</returns>
         Usuario Login(string email, string senha);
+
+        /// <summary>
+        /// Faz a busca pelo identificador
+        /// </summary>
+        /// <param name="id">identificador</param>
+        Usuario BuscarPorId(int id);
     }
 }

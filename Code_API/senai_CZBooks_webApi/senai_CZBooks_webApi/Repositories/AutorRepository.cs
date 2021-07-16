@@ -1,4 +1,5 @@
-﻿using senai_CZBooks_webApi.Domains;
+﻿using senai_CZBooks_webApi.Contexts;
+using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,14 +14,21 @@ namespace senai_CZBooks_webApi.Repositories
     /// </summary>
     public class AutorRepository : IAutorRepository
     {
+
+        //Faz instância da context para ter conexão com o Banco de dados
+        CZBooksContext ctx = new CZBooksContext();
+
         /// <summary>
         /// Faz a atualização do autor
         /// </summary>
-        /// <param name="id">identificador</param>
         /// <param name="autorAtualizado">nomenclatura para atualização</param>
         public void Atualizar(Autor autorAtualizado)
         {
-            throw new NotImplementedException();
+            //Faz a atualização de autores
+            ctx.Autors.Update(autorAtualizado);
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
 
@@ -31,7 +39,8 @@ namespace senai_CZBooks_webApi.Repositories
         /// <returns></returns>
         public Autor BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            //Faz o retorno da busca pelo identificador
+            return ctx.Autors.FirstOrDefault(a => a.IdAutor == id);
         }
 
 
@@ -41,7 +50,11 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="novoAutor">nomenclatura para o cadastro de autor</param>
         public void Cadastrar(Autor novoAutor)
         {
-            throw new NotImplementedException();
+            //Faz a execução do método de cadastro
+            ctx.Autors.Add(novoAutor);
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
 
@@ -51,7 +64,11 @@ namespace senai_CZBooks_webApi.Repositories
         /// <param name="id">identificador</param>
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            //Faz a execução do método de exclusão
+            ctx.Autors.Remove(BuscarPorId(id));
+
+            //Salva as alterações
+            ctx.SaveChanges();
         }
 
 
@@ -61,7 +78,8 @@ namespace senai_CZBooks_webApi.Repositories
         /// <returns>uma lista com todos os autores</returns>
         public List<Autor> ListarTodos()
         {
-            throw new NotImplementedException();
+            //Faz a listagem 
+            return ctx.Autors.ToList();
         }
     }
 }

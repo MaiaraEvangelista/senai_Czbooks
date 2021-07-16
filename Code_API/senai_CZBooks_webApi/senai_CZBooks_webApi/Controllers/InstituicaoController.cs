@@ -9,11 +9,13 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace senai_CZBooks_webApi.Controllers {
-   //Definiçaõ da rota do controlador
+    //Define que a resposta vai ser em json
+    [Produces("application/json")]
+    //Definiçaõ da rota do controlador
     [Route("api/[controller]")]
-
     //Define que é um controlador
     [ApiController]
+
     public class InstituicaoController : ControllerBase 
     {
         //Instância a 'instituição interface' para receber os métodos
