@@ -14,9 +14,14 @@ class Livros extends Component{
         }
     }
 
+    //inicia  a função de buscar livros
+    buscarLivros = () =>{
+        console.log('chamando API')
+    }
+
     //iniciação de funções
     componentDidMount(){
-
+        this.buscarLivros();
     }
 
     //mostra o que vai ser renderizado na tela
@@ -32,9 +37,28 @@ class Livros extends Component{
                                 <tr>
                                     <th>#</th>
                                     <th>Titulo</th>
-                                    <th>Autor</th>
+                                    <th>Nome Autor</th>
+                                    <th>Categoria</th>
+                                    <th>Data Publicação</th>
                                 </tr>
                             </thead>
+
+                            {/*renderização de lista com suas propriedades*/}
+                            <tbody>
+                               {
+                                   this.state.listaTiposLivros.map( (tipoLivro) => {
+                                       return(
+                                           <tr key={tipoLivro.idLivro}>
+                                               <td>{tipoLivro.idLivro}</td>
+                                               <td>{tipoLivro.Titulo}</td>
+                                               <td>{tipoLivro.NomeAutor}</td>
+                                               <td>{tipoLivro.Categoria}</td>
+                                               <td>{tipoLivro.DataPublicacao}</td>
+                                           </tr>
+                                       )
+                                   })
+                               }
+                            </tbody>
                         </table>
                     </section>
                 </main>

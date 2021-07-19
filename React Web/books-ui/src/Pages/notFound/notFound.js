@@ -13,4 +13,4 @@ function notFound() {
   }
   
   //exportação do notFound
-  export default notFound;
+export default notFound;
