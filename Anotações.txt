@@ -1,0 +1,12 @@
+**npm start: roda o projeto
+ctrl+c: para de rodar o projeto
+
+
+*componentes de classe se usa o render
+*componentes funcionais n usam render
+*pode se exportar a classe no final ou direto integrado a classe (export default login;/ export default class...)
+*Campos de classe (buscarEventos = () =>{})
+*fetch: faz a requisiçaõ através da URL passada dentro dela
+*.then(): se refere ao retorno de uma requisição
+*catch: tratativa de erro
+--thead: faz o cabeçalho da "tabela" 

@@ -11,7 +11,7 @@ import App from './Pages/Home/App';
 import Livros from '../src/Pages/livros/livros';
 import notFound from '../src/Pages/notFound/notFound.js';
 
-
+//importação de arquivo de teste
 import reportWebVitals from './reportWebVitals';
 
 const rout = (
@@ -20,8 +20,8 @@ const rout = (
       <Switch>
         <Route exact path="/" component={App}/>   {/* renderização da pg home */} 
         <Route path="/livros" component={Livros}/>   {/* renderização da pg livros */} 
-        <Route path="/notFound" component={notFound}/>   {/* renderização da pg notFound */} 
-        <Redirect to="/notFound" component={notFound} /> {/* renderização da pg notFound */} 
+        <Route exact path="/notFound" component={notFound}/>   {/* renderização da pg notFound */} 
+        <Redirect  to="/notFound" component={notFound} /> {/* renderização da pg notFound */} 
         
         
         <Route path="/" component={App}/>   {/* renderização da pg home */} 

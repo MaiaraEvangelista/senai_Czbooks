@@ -10,17 +10,29 @@ class Livros extends Component{
         //estados/valores da props
         this.state = {
             listaTiposLivros : [],
-            titulo : ''
+            titulo : '',
+            idAutor: '',
+            idInstituicao : '',
+            dataPublicacao : new Date()
         }
     }
 
     //inicia  a função de buscar livros
     buscarLivros = () =>{
+        //aparece mensagem no console
         console.log('chamando API')
+
+        //passa o caminho da api
+        fetch('http://localhost:5000/api/livros', {
+            headers: {
+                'Authorization' : 'Bearer' + localStorage.getItem('livro ')
+            }
+        })
     }
 
     //iniciação de funções
     componentDidMount(){
+        //faz a chamada para a função de buscar livros
         this.buscarLivros();
     }
 
