@@ -1,4 +1,7 @@
 **npm start: roda o projeto
+*npx create-react-app nome-projeto: (cria projeto em react)
+
+
 ctrl+c: para de rodar o projeto
 
 
@@ -10,3 +13,13 @@ ctrl+c: para de rodar o projeto
 *.then(): se refere ao retorno de uma requisição
 *catch: tratativa de erro
 --thead: faz o cabeçalho da "tabela" 
+*setItem: grava um valor
+*getItem: pega um valor
+
+
+
+
+----------OBS--------
+*não é possível fazer alterações sem ter funções criadas;
+* na criação do projeto o nome tem que ser em minúsculo (npx create-react-app nome-projeto);
+*quando se clona faz :npm install (para baixar as node modules)

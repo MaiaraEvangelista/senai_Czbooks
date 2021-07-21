@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XMsgnGN15PCsuBRCfwzpCCOirsd6asLgSZLhE8txVfGeuKf+Gi6cVTtIvAi8Wi/mpj2AOqhfh0EVukQhjiRUog==",
+  "dgSpecHash": "7lkSnzd5tmC2C6g/HUiplZDxHI3dL9d/spkuJQmGergK+syg//clrXsl93dTh5Xeb11MVvncFkawarnmzDX8qA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FIC\\Desktop\\Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
+  "projectFilePath": "C:\\Users\\FIC\\Desktop\\Nova pasta M\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FIC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FIC\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.8\\microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512",

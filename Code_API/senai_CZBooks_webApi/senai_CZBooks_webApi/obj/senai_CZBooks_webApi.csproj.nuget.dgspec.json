@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FIC\\Desktop\\Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj": {}
+    "C:\\Users\\FIC\\Desktop\\Nova pasta M\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FIC\\Desktop\\Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj": {
+    "C:\\Users\\FIC\\Desktop\\Nova pasta M\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
+        "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Nova pasta M\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
         "projectName": "senai_CZBooks_webApi",
-        "projectPath": "C:\\Users\\FIC\\Desktop\\Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
+        "projectPath": "C:\\Users\\FIC\\Desktop\\Nova pasta M\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
         "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FIC\\Desktop\\Maiara\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\obj\\",
+        "outputPath": "C:\\Users\\FIC\\Desktop\\Nova pasta M\\senai_Czbooks\\Code_API\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
